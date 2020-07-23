@@ -51,12 +51,27 @@ et êtes invités à commenter votre code quand celà vous semble nécessaire.
 3 chansons et 3 artistes seront initialement présents dans la base de données. Libre à vous d'en créer d'autre ou de les modifier pour les besoins de
 vos tests.
 
-Vous êtes encouragésà utiliser un logiciel client API pour teser vos routes tel que <a href="https://www.postman.com/">Postman</a>.
+Vous êtes encouragés à utiliser un logiciel client API pour teser vos routes tel que <a href="https://www.postman.com/">Postman</a>.
 
 Bon Courage !
 
 <ol>
 <li>
-  Chaque chanson est liée à un artiste
+  Chaque chanson est liée à un artiste via la propriété `artistId`. Faites en sorte que les routes GET de `songs` renvoit au client toutes les données de l'artiste correspondant. Exemple:
+    
+```
+{
+    "title": "The Payback Part 1",
+    "releaseYear": "1974",
+    "duration": "2:49",
+    "artistId": "fPsGa25uqjrhBGms",
+    "_id": "oFAmkL4GAup7uyg3",
+    "artist": {
+        "name": "James Brown",
+        "nationality": "USA",
+        "_id": "fPsGa25uqjrhBGms"
+    }
+}
+```
 </li>
 </ol>
