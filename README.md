@@ -97,7 +97,7 @@ Bon Courage !
 <br/>
 
 <li>
-    Mettre en place un système de validation sur les routes POST qui obligeront l'utilisateur a renseigner tous les champs lors de la création d'une donnée, sur les routes `songs`, `artists` et `genres` tel que défini dans les structures de données fournies plus haut ou dans les questions. Si l'un des champs est manquant, la donnée ne sera pas créée et sera envoyé en retour un code HTTP 400 Bad Request avec un message précisant les champs manquants.
+    Mettre en place un système de validation sur les routes POST qui obligera l'utilisateur a renseigner tous les champs lors de la création d'une donnée, sur les routes `songs`, `artists` et `genres` tel que défini dans les structures de données fournies plus haut ou dans les questions. Si l'un des champs est manquant, la donnée ne sera pas créée et sera envoyé en retour un code HTTP 400 Bad Request avec un message précisant les champs manquants.
 </li>
 <br/>
 
