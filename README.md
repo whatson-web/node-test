@@ -80,16 +80,29 @@ Bon Courage !
 }
 ```
 </li>
+<br/>
 
 <li>
     Lorsqu'un utilisateur récupère un artiste directment via son id (route `/artists/:id`), faites en sorte de transmettre dans la réponse
-    une propriété `numberOfSongs` pour afficher le nombre de chansons dont l'artiste est auteur.
+    une propriété `numberOfSongs` pour afficher le nombre de chansons dont l'artiste est l'auteur.
 </li>
+<br/>
 
 <li>
     Créer une nouvelle table et un nouvel ensemble de route appelé `genres` où on pourra créer et lister (POST et GET) des genres musicaux.
     Un genre musical sera défini uniquement par son nom (`name`). Exemple "Rap", "Classique", "Jazz" etc...
     On pourra également attribuer un genre à une chanson, de la même manière dont on associe les chansons aux artistes. Et il faudra transmettre
-    l'objet de genre via la route `songs`comme lors de la question 1.
+    l'objet "genre" via la route `songs`comme lors de la question 1.
 </li>
+<br/>
+
+<li>
+    Mettre en place un système de validation sur les routes POST qui obligeront l'utilisateur a renseigner tous les champs lors de la création d'une donnée, sur les routes `songs`, `artists` et `genres` tel que défini dans les structures de données fournies plus haut ou dans les questions. Si l'un des champs est manquant, la donnée ne sera pas créée et sera envoyé en retour un code HTTP 400 Bad Request avec un message précisant les champs manquants.
+</li>
+<br/>
+
+<li>
+  Mettre en place deux routes de méthode `DELETE` permettant de supprimer respectivement un artiste ou une chanson en fournissant l'id de la donnée à supprimer en paramètre. Lors de la suppression d'un artiste, il faudra vérifier qu'aucune chanson n'est associé à l'artiste à supprimer. Si il y a au moins une chanson associé à l'artiste en question, il faudra annuler l'opération et renvoyer un code HTTP 403 Forbidden.
+</li>
+<br/>
 </ol>
