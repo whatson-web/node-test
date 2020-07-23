@@ -25,3 +25,7 @@ A vous de réaliser les tâches en essayant au mieux de respecter l'architecture
 et en lisant les documentations respectives des technologies utilisées: <a href="https://expressjs.com/">Express</a>, <a href="https://github.com/louischatriot/nedb">NeDB</a> . Vous êtes libres d'utiliser les librairies de votre choix (ou même de ne pas en utiliser),
 et êtes invités à commenter votre code quand celà vous semble nécessaire.
 
+3 chansons et 3 artistes seront initialement présents dans la base de données. Libre à vous d'en créer d'autre ou de les modifier pour les besoins de
+vos test.
+
+Bon Courage !
