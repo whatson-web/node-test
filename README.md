@@ -39,6 +39,7 @@ Exemple d'une chanson:
 }
 ```
 
+
 Vous devrez améliorer l'API déjà existante en réalisant les tâches numérotées ci-dessous. 
 
 Les données sont gérées par la librairie <a href="https://github.com/louischatriot/nedb">NeDB</a> qui persiste les données dans des
@@ -54,6 +55,11 @@ vos tests.
 Vous êtes encouragés à utiliser un logiciel client API pour teser vos routes tel que <a href="https://www.postman.com/">Postman</a>.
 
 Bon Courage !
+
+
+
+## Tâches à réaliser
+
 
 <ol>
 <li>
@@ -73,5 +79,17 @@ Bon Courage !
     }
 }
 ```
+</li>
+
+<li>
+    Lorsqu'un utilisateur récupère un artiste directment via son id (route `/artists/:id`), faites en sorte de transmettre dans la réponse
+    une propriété `numberOfSongs` pour afficher le nombre de chansons dont l'artiste est auteur.
+</li>
+
+<li>
+    Créer une nouvelle table et un nouvel ensemble de route appelé `genres` où on pourra créer et lister (POST et GET) des genres musicaux.
+    Un genre musical sera défini uniquement par son nom (`name`). Exemple "Rap", "Classique", "Jazz" etc...
+    On pourra également attribuer un genre à une chanson, de la même manière dont on associe les chansons aux artistes. Et il faudra transmettre
+    l'objet de genre via la route `songs`comme lors de la question 1.
 </li>
 </ol>
