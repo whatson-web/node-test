@@ -9,11 +9,11 @@ const app = express();
 const port = 3000;
 
 app.listen(port, () => {
-  app.use(express.json());  
+  app.use(express.json());
 
   console.log(`App listening at http://localhost:${port}`);
 
   // Routes
-  Songs(app, db.songs);
-  Artists(app, db.artists);
+  Songs(app, db);
+  Artists(app, db);
 });

@@ -1,16 +1,16 @@
 module.exports = (app, db) => {
+  const artistDb = db.artists;
+
   app.get("/artists", async function (req, res) {
-    
-    db.find({}, function (err, docs) {
+    artistDb.find({}, function (err, docs) {
       res.send(docs);
     });
   });
 
   app.get("/artists/:id", async function (req, res) {
-    
     const { params } = req;
 
-    db.findOne({ _id: params.id }, function (err, doc) {
+    artistDb.findOne({ _id: params.id }, function (err, doc) {
       res.send(doc);
     });
   });
@@ -18,8 +18,8 @@ module.exports = (app, db) => {
   app.post("/artists", async function (req, res) {
     const { body } = req;
 
-    db.insert(body, (err, newDoc) => {
+    artistDb.insert(body, (err, newDoc) => {
       res.send(newDoc);
     });
   });
-}
+};
